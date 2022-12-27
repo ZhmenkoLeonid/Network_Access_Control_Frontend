@@ -24,6 +24,8 @@ export default class NacRoleListComponent extends React.Component {
                         <th>ИД</th>
                         <th>Имя</th>
                         <th>Сетевые ресурсы</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                     {nacRoles}
                     </tbody>

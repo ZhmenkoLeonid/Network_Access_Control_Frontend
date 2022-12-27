@@ -5,11 +5,20 @@ export default class UserDeviceAlertsSubComponent extends React.Component {
         super(props);
     }
 
+    function
+    onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
 
     render() {
-        let roles = this.props.alerts.map(alert =>
-            <li>{alert.alertMessage}</li>
-        );
+        console.log(this.props.alerts);
+        let roles = this.props.alerts
+            .map(alert => alert.alertMessage)
+            .filter(this.onlyUnique)
+            .map(alert =>
+                <li>{alert}</li>
+            );
+        console.log(roles);
         return (
             <p>
                 {roles}

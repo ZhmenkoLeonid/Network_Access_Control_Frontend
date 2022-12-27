@@ -25,6 +25,7 @@ export default class SecurityUserListComponent extends React.Component {
                         <th>Nac Роли</th>
                         <th>Устройства</th>
                         <th></th>
+                        <th></th>
                     </tr>
                     {users}
                     </tbody>
